@@ -1,7 +1,7 @@
 {
     "name": "net.puk06.material_cloner",
     "displayName": "MaterialCloner",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "Pukorufu",
         "url": "https://github.com/puk06",
@@ -9,5 +9,5 @@
     },
     "unity": "2022.3",
     "description": "マテリアルがクローンされたオブジェクトを作成する拡張エディタ",
-    "url": "https://github.com/puk06/MaterialCloner/releases/download/v1.0.0/net.puk06.material_cloner-v1.0.0.zip?"
+    "url": "https://github.com/puk06/MaterialCloner/releases/download/v1.0.1/net.puk06.material_cloner-v1.0.1.zip?"
 }
