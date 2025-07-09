@@ -81,10 +81,10 @@ namespace MaterialCloner
             clonedObject.name = targetObject.name + " (MaterialCloned)";
             Undo.RegisterCreatedObjectUndo(clonedObject, "Material Cloner - Clone Object");
 
-            SkinnedMeshRenderer[] renderers = SkinnedMeshRendererUtils.GetAllSkinnedMeshRenderers(clonedObject);
+            Renderer[] renderers = RendererUtils.GetAllRenderers(clonedObject);
             if (renderers.Length == 0)
             {
-                GuiUtils.ShowDialog("SkinnedMeshRenderer‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B");
+                GuiUtils.ShowDialog("Renderer‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B");
                 return;
             }
 
@@ -95,7 +95,7 @@ namespace MaterialCloner
 
             foreach (var renderer in renderers)
             {
-                if (SkinnedMeshRendererUtils.IsNull(renderer)) continue;
+                if (RendererUtils.IsNull(renderer)) continue;
 
                 Material[] originalMaterials = renderer.sharedMaterials;
                 Material[] clonedMaterials = new Material[originalMaterials.Length];
