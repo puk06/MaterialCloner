@@ -9,7 +9,7 @@ namespace MaterialCloner
     public class MaterialCloner : EditorWindow
     {
         private const bool BETA_VERSION_BOOL = false;
-        private const string CURRENT_VERSION = "v1.0.0";
+        private const string CURRENT_VERSION = "v1.0.1";
         private const string AUTHOR = "‚Õ‚±‚é‚Ó";
 
         private GameObject targetObject;
